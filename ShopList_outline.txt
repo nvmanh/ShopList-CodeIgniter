@@ -1,0 +1,59 @@
+
+Project : ShopList
+Description : ShopList Website Application that gather and record all products price,location during promotions. Info added by user and user get points for every submission. Visitor can find every product cheapest price during promotion at each location.
+
+
+
+Version : 0.0.1
+Author/Copyright : Hafidzi MY
+
+Framework : CodeIgniter
+
+MySQL
+-----
+Database : ShopList
+Tables
+1. product
+	a. product_id				INT
+	b. product_name				STRING
+	c. product_desc				STRING
+	d. product_images		
+	e. product_retail_price		CURRENCY
+	f. product_promo_price
+	g. product_weight (per kg/each/per item/per karton)
+2. location
+	a. location_id
+	b. location_name
+	c. location_desc
+	d. location_city
+	e. location_state
+3. promotion
+	a. promo_id
+	b. promo_name
+	c. promo_desc
+	d. promo_discount [10%,20%,30%]
+	d. promo_startdate
+	e. promo_enddate 
+4. users
+	a. user_id
+	b. user_name
+	c. user_password
+	d. user_fullname
+	e. user_reg_date
+	f. user_roles [admin,user]
+5. rating
+6. setting
+
+
+
+Screen/Page
+------------
+1. Search / Carian Promosi/Produk/Lokasi/Harga/Jenama
+2. Add new promotion/catalogue/flyers
+3. Register/Login
+
+
+Features
+--------
+e.g : search most cheapest Drypers in Shah Alam in September 2015.
+
